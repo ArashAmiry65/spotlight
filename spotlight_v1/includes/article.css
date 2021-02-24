@@ -1,0 +1,300 @@
+body{
+    background-color: #f2f2f2;
+}
+
+.container-fluid{
+    padding: 0;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1249px){
+nav{
+    background-color: black;
+    
+}
+
+nav a{
+    color: white;
+    font-family: 'Bungee Inline', cursive;
+    transition: 0.4s;
+}
+
+nav .navbar-brand{
+    font-size: 32px;
+}
+
+nav a:hover{
+    color: rgb(170, 170, 170);
+}
+
+/******* SEARCH ENGINE  *********/
+.search-engine{
+    float: right;
+    margin-top: -36px;
+    margin-right: 35px;
+}
+
+.search-engine > form{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+}
+
+.search-engine > form > input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #07051a;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+.search-engine > form:hover{
+    width: 250px;
+    cursor: pointer;
+}
+
+.search-engine > form:hover input{
+    display: block;
+}
+
+.search-engine > form:hover .fa{
+    background: #07051a;
+    color: white;
+}
+/* ************************ */
+/* ARTICLE STRUCTURE */
+
+.main-content{
+    /* border: 2px solid black; */
+    margin-top: 3%;
+}
+
+.article-container{
+    display: inline-block;
+    /* border: 2px solid red; */
+    background-color: white;
+    width: 70%;
+    margin-left: 2.5%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.article-container img{
+    width: 100%;
+}
+
+.article-container h3{
+    padding-left: 4%;
+    font-size: 17px;
+    margin-top: 2%;
+    margin-bottom: 0;
+    font-family: 'Rajdhani', sans-serif;
+    text-transform: uppercase;
+    color: #c4a078;
+}
+
+.article-container h2{
+    text-transform: uppercase;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-top: 9px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.article-container p{
+    padding-left: 4%;
+    padding-right: 6%;
+    line-height: 180%;
+}
+
+/* ***************** */
+/* RELATED ARTICLES TO THE RIGHT SIDE */
+
+.related-articles{
+    float: right;
+    font-family: 'Roboto Condensed', sans-serif;
+    /* border: 2px solid lawngreen; */
+    margin-right: 1%;
+    margin-left: 1%;
+    width: 25.5%;
+    background-color: white;
+}
+
+.related-articles .row{
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border: 0px;
+}
+.related-articles .title-article{
+    text-align: left;
+    font-size: 13px;
+    padding-left: 28%;
+    padding-right: 4%;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: rgb(99, 99, 99);
+}
+
+.related-articles h5{
+    text-align: right;
+    padding-right: 4%;
+    margin-bottom: 0%;
+    font-size: 13px;
+    font-family: 'Rajdhani', sans-serif;
+    color: rgb(99, 99, 99);
+
+}
+
+.related-articles .title-related{
+    text-align: center;
+    font-size: 23px;
+    padding-top: 7%;
+}
+
+.related-articles ul{
+    list-style: none;
+    padding: 10px;
+}
+
+.related-articles a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(167, 167, 167, 0.411);
+    text-decoration: none;
+    height: 90px;
+}
+
+.related-articles ul li img{
+    float: left;
+    width: 25%;
+}
+
+.related-articles a:hover{
+    background-color: rgb(226, 226, 226);
+}
+
+.related-article-title{
+    text-transform: uppercase;
+}
+
+/* Comments */
+
+.comments-container{
+    width: 70%;
+    margin-left: 2.5%;
+    margin-right: 0;
+    background-color: black;
+    color: white;
+}
+
+#mainComment{
+    width: 90%;
+    padding-bottom: 60px;
+    margin: 5px 5% 5px 5%;
+    padding-left: 5px;
+    border: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-radius: 2px;
+}
+
+.comments-form-div{
+    padding-bottom: 15px;
+}
+
+.submit-comment{
+    float: right;
+    margin-right: 5%;
+    padding: 5px 10px 5px 10px;
+    font-family: 'Bungee Inline', cursive;
+    border-radius: 0px;
+    border: 0;
+    background-color: white;
+}
+
+.comment-title-section{
+    padding-top: 15px;
+    text-align: center;
+    color: white;
+    font-family: 'Bungee Inline', cursive;
+}
+
+.chat-comment{
+    color: black;
+    background-color: white;
+}
+
+.chat-comment .count-comment{
+    padding-top: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.chat-comment .userComments .comment{
+    padding-top: 15px;
+    padding-bottom: 5px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1.2px solid grey;
+   }
+
+.userComment{
+    width: 95%;
+    word-wrap: break-word;
+}
+
+.user{
+    display: inline-block;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.comment .remove-comment{
+    display: inline-block;
+    font-size: 15px;
+    font-family: 'Rajdhani', sans-serif;
+    padding-left: 10px;
+}
+
+.comment .remove-comment button{
+    background-color: white;
+    border: 0;
+    border-left: 1.2px solid grey;
+}
+
+.comment .remove-comment button:hover{
+    background-color: rgb(240, 240, 240);
+}
+}
