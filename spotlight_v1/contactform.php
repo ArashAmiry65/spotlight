@@ -14,7 +14,7 @@ if(isset($_POST['submitMail'])){
     $mail->CharSet = 'UTF-8';
 
     $mail->setFrom($_POST['mail'], $_POST['name']);
-    $mail->addAddress('arashamiry@hotmail.com'); // MEJLET SOM MAN VILL SKICKA TILL
+    $mail->addAddress('arahamiry065@gmail.com'); // MEJLET SOM MAN VILL SKICKA TILL
     $mail->addReplyTo($_POST['mail']);
 
     $mail->isHTML(true);
